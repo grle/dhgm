@@ -1,0 +1,37 @@
+@media (max-width: 1400px) {
+  .header {
+    padding: 10rem 0rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 740px) {
+  #backdrop {
+    display: none;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: .3;
+    left: 0;
+    transition: .3s;
+  }
+
+  .header {
+    padding: 5rem 0rem;
+  }
+
+  .grid-col {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .pg-break {
+    height: 10rem;
+  }
+}

@@ -1,0 +1,412 @@
+/**************ROOTS */
+:root {
+  /* COLORS */
+  --dark: #2C3639;
+  --off-dark: #3F4E4F;
+  --bg: #DCD7C9;
+  --emphasis: #A27B5C;
+  --text-color: #333333;
+  /* SPACING */
+  --padding: 10px;
+  --space: 5rem;
+  --small-space: 2rem;
+  --nav: 72px;
+}
+
+/**************MAIN */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  min-height: 100%;
+}
+
+h1, h2 {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  color: var(--emphasis);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+hr {
+  border: 2px solid var(--emphasis);
+  width: 100px;
+  margin-top: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+/**************CLASS */
+/* COLOR */
+.color-bg {
+  background-color: var(--bg);
+}
+
+.dark-bg {
+  background-color: var(--dark);
+}
+
+.off-dark-bg {
+  background-color: var(--off-dark);
+}
+
+.white-text {
+  color: white;
+}
+
+/* DIV BOX */
+.shadow-box {
+  box-shadow: 0px 5px 10px 1px gray;
+}
+
+.center-block {
+  margin: auto;
+}
+
+/* TEXT */
+.center-text {
+  text-align: center;
+}
+
+.shadow-text {
+  text-shadow: 4px 4px 20px black;
+}
+
+.pad-heading {
+  padding-bottom: 15px;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+.dunamis {
+  font-weight: 800;
+  /* color: var(--emphasis); */
+  color: var(--bg);
+}
+
+/* SPACE */
+.padding {
+  padding: var(--padding);
+}
+
+.spacing {
+  padding: var(--space) 0rem;
+}
+
+.spacing-top {
+  padding-top: var(--space);
+}
+
+.spacing-bottom {
+  padding-bottom: var(--space);
+}
+
+.small-spacing {
+  padding: var(--small-space) 0rem;
+}
+
+.small-spacing-top {
+  padding-top: var(--small-space);
+}
+
+.small-spacing-bottom {
+  padding-bottom: var(--small-space);
+}
+
+.left-space {
+  padding-left: var(--small-space);
+}
+
+.right-space {
+  padding-right: var(--small-space);
+}
+
+.text-space-h4 {
+  padding-top: 15px;
+}
+
+.nav-spacing {
+  margin-top: var(--nav);
+}
+
+.width {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+
+/* NAVBAR */
+.menu {
+  margin-right: 15px;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu a:hover {
+  color: var(--emphasis);
+  transition: 0.3s;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 17px;
+}
+
+.logo-img {
+  height: 50px;
+  padding-left: 15px;
+}
+
+.nav-shadow {
+  box-shadow: 0px 1px 2px 0px black;
+}
+
+.outline {
+  border: 1px solid white;
+  padding: 10px 0px;
+  margin-left: 15px;
+}
+
+.outline:hover {
+  background-color: white;
+  color: var(--emphasis);
+  transition: 0.3s;
+}
+
+/* HAMBURGER */
+.toggle {
+  /* display: none; */
+  padding-top: 6px;
+}
+
+.hamburger .line{
+  width: 50px;
+  height: 2px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+/* PICTURE BACKGROUND */
+.pic-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.pg-break {
+  height: 20rem;
+}
+
+.pic-china {
+  background-image: url("../img/mission/nuno-alberto-china-unsplash.jpg");
+}
+
+.pic-s-korea {
+  background-image: url("../img/mission/sava-bobov-s-korea-unsplash.jpg");
+}
+
+.pic-philippines {
+  background-image: url("../img/mission/gino-philippines-unsplash.jpg");
+}
+
+.pic-contact {
+  background-image: url("../img/main/nadine-redlich-unsplash.png");
+}
+
+.pic-about {
+  background-image: url("../img/main/timothy-eberly-unsplash.jpg");
+}
+
+.pic-contact2 {
+  background-image: url("../img/main/alex-woods-unsplash.jpg");
+}
+
+/* HEADER */
+.header {
+  padding: 15rem 0rem;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/main/header-bg.png");
+}
+
+.header-sub {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+}
+
+.header-sub {
+  grid-column: 1;
+}
+
+.header-vers {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.header-pg {
+  padding: 5rem 0rem;
+  /* display: flex; */
+  justify-content: center;
+}
+
+/* PICTURE COLUMN */
+.pic-col {
+  display: flex;
+}
+
+.pic-col-text {
+
+}
+
+/* THREE COLUMN */
+.grid-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.grid-unit {
+  height: 300px;
+}
+
+.bottom-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* top: 0; */
+  bottom: 0;
+  margin: auto;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 15px;
+  margin: 15px 0px;
+  text-align: center;
+  width: 150px;
+}
+
+.btn-dark:hover {
+  background-color: var(--dark);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-dark {
+  border: 1px solid var(--text-color);
+}
+
+.btn-white {
+  border: 1.5px solid white;
+  background-color: white;
+}
+
+.btn-white:hover {
+  border: 1.5px solid var(--emphasis);
+  background-color: var(--emphasis);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-clr {
+  /* filter: brightness(0.8); */
+  border: 1.5px solid white;
+  color: white;
+  /* font-weight: 600; */
+}
+
+.btn-clr:hover {
+  background-color: white;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+/* FOOTER */
+footer a:hover {
+  color: var(--emphasis);
+  transition: 0.3s;
+}
