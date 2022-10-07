@@ -20,7 +20,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <!-- ICONS -->
-  <!-- <script src="https://kit.fontawesome.com/4befeb6987.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -28,7 +27,7 @@
   <!-- NAVIGATION -->
   <nav id="nav-bar" class="dark-bg padding nav-shadow">
     <div class="logo">
-      <a href="index.html">
+      <a href="./">
         <img class="logo-img" src="img/icon.png" alt="Dunamis Harvest icon">
       </a>
     </div>
@@ -43,10 +42,10 @@
       <div id="backdrop" onclick="toggleMenu()"></div>
       <div class="menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/about.html">About</a></li>
-          <li><a href="pages/mission.html">Mission</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./mission.html">Mission</a></li>
+          <li><a href="./contact.html">Contact</a></li>
           <span class="outline">
             <a target="_blank" href="https://www.paypal.com/paypalme/dunamisharvest">
               <li>Donate</li>
@@ -93,7 +92,7 @@
         darkness, and suffering. We would like to share our ministry and bring
         to life the vision we have for the people of God.</p>
     </div>
-    <div class="pic-col width spacing-top">
+    <div class="pic-col width small-spacing-top">
       <div class="pic-col-img">
         <img class="shadow-box" src="img/main/couple.png" alt="picture of Daniel and Tae Hee together">
       </div>
@@ -131,19 +130,21 @@
   <!-- CONTACT -->
   <div class="spacing pic-bg pic-bg pic-contact" alt="Picture of wheat in harvest">
     <div class="width">
-      <h3 class="white-text">Let's Connect</h3>
-      <!-- <div class="contact-form">
-        <label class="white-text" for="fname">Name</label>
-        <input type="text" id="name" name="name" placeholder="John Doe">
-        <label class="white-text" for="fname">Email</label>
-        <input type="text" id="phone-number" name="phone" placeholder="johndoe@gmail.com">
-        <label class="white-text" for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
-      </div> -->
-
-      <a class=" btn btn-clr" href="#">Submit</a>
+      <div class="half-width">
+        <h3 class="white-text">Let's Connect</h3>
+        <form action="/contact.php">
+        <div class="contact-form small-spacing">
+          <label class="white-text" for="fname">Name </label>
+          <input class="white-contact" type="text" id="name" name="name" placeholder="John Doe" required>
+          <label class="white-text" for="fname">Email</label>
+          <input class="white-contact" type="text" id="phone-number" name="phone" placeholder="johndoe@gmail.com" required>
+          <label class="white-text" for="subject">Message</label>
+          <textarea class="white-contact" id="subject" name="subject" placeholder="Agape!" style="height:200px" required></textarea>
+        </div>
+        <a class="btn btn-clr" type="submit" value="Submit">Submit</a>
+      </form>
+      </div>
     </div>
-
   </div>
 
   <!-- FOOTER -->

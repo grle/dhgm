@@ -1,14 +1,6 @@
-//jquery
-// document.ready(function(){
-//   document.getElementByClassName("hamburger").click(function(){
-//     this.classList.toggle("is-active");
-//   });
-// });
-
 
 let boolMenu = false;
 let mobile = document.getElementsByClassName("mobile-menu");
-let bg = document.getElementById("backdrop");
 
 function toggleMenu() {
   let ham = document.getElementById("hamburger-1");
