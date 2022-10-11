@@ -44,7 +44,13 @@
         <ul>
           <li><a href="./">Home</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="./mission.html">Mission</a></li>
+          <li class="dropdown"><a href="./mission.html">Mission</a>
+            <div class="dropdown-content">
+              <a href="#">China</a>
+              <a href="#">S. Korea</a>
+              <a href="#">Philippines</a>
+            </div>
+          </li>
           <li><a href="./contact.html">Contact</a></li>
           <span class="outline">
             <a target="_blank" href="https://www.paypal.com/paypalme/dunamisharvest">
@@ -73,7 +79,7 @@
     <!-- spacing-top -->
     <div class="pic-col width ">
       <div class="pic-col-img">
-        <img class="shadow-box" src="../img/about/daniel.png" alt="picture of Daniel Lee">
+        <img class="shadow-box" src="img/about/daniel.png" alt="picture of Daniel Lee">
       </div>
       <div class="pic-col-text left-space">
         <h4>Senior Pastor</h4>
@@ -86,11 +92,11 @@
       <div class="pic-col-text">
         <h4>Organizer</h4>
         <h3 class="pad-heading">Tae Hee Kim</h3>
-        <p>Tae Hee Kim was an engineer in Santa Clara County before joining the ministry full time. She was a former Sunday School Teacher at the Philadelphia Korean Baptist Church for six years and is currently working as an interpreter as part of the ministry for All People's Mission Church. </p>
+        <p>Tae Hee Kim was an engineer in Santa Clara County before joining the ministry full time. She was a former Sunday School Teacher at the Philadelphia Korean Baptist Church for six years and is currently working for All People's Mission Church. </p>
         <!-- <a class="btn btn-dark" href="#">Learn More</a> -->
       </div>
       <div class="pic-col-img left-space">
-        <img class="shadow-box" src="../img/about/tae-hee.png" alt="picture of Tae Hee Kim">
+        <img class="shadow-box" src="img/about/tae-hee.png" alt="picture of Tae Hee Kim">
       </div>
     </div>
   </div>
@@ -116,19 +122,21 @@
   <!-- CONTACT -->
   <div class="spacing pic-bg pic-bg pic-contact" alt="Picture of wheat in harvest">
     <div class="width">
-      <h3 class="white-text">Let's Connect</h3>
-      <!-- <div class="contact-form">
-        <label class="white-text" for="fname">Name</label>
-        <input type="text" id="name" name="name" placeholder="John Doe">
-        <label class="white-text" for="fname">Email</label>
-        <input type="text" id="phone-number" name="phone" placeholder="johndoe@gmail.com">
-        <label class="white-text" for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
-      </div> -->
-
-      <a class=" btn btn-clr" href="#">Submit</a>
+      <div class="half-width">
+        <h3 class="white-text">Let's Connect</h3>
+        <form action="/contact.php">
+        <div class="contact-form small-spacing">
+          <label class="white-text" for="fname">Name </label>
+          <input class="white-contact" type="text" id="name" name="name" placeholder="John Doe" required>
+          <label class="white-text" for="fname">Email</label>
+          <input class="white-contact" type="text" id="phone-number" name="phone" placeholder="johndoe@gmail.com" required>
+          <label class="white-text" for="subject">Message</label>
+          <textarea class="white-contact" id="subject" name="subject" placeholder="Agape!" style="height:200px" required></textarea>
+        </div>
+        <button class="btn btn-clr" type="submit">Submit</button>
+      </form>
+      </div>
     </div>
-
   </div>
 
   <!-- FOOTER -->

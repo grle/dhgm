@@ -44,7 +44,13 @@
         <ul>
           <li><a href="./">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="mission.html">Mission</a></li>
+          <li class="dropdown"><a href="./mission.html">Mission</a>
+            <div class="dropdown-content">
+              <a href="#">China</a>
+              <a href="#">S. Korea</a>
+              <a href="#">Philippines</a>
+            </div>
+          </li>
           <li><a href="contact.html">Contact</a></li>
           <span class="outline">
             <a target="_blank" href="https://www.paypal.com/paypalme/dunamisharvest">
@@ -74,7 +80,7 @@
           <label class="" for="subject">Message</label>
           <textarea class="dark-contact" id="subject" name="subject" placeholder="Agape!" style="height:200px" required></textarea>
         </div>
-        <a class=" btn btn-dark" type="submit" value="Submit">Submit</a>
+        <button class=" btn btn-dark" type="submit" value="Submit">Submit</button>
       </form>
       </div>
     </div>

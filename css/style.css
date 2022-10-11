@@ -66,6 +66,12 @@ a {
   color: var(--text-color);
 }
 
+button {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  background: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -242,6 +248,32 @@ footer a:hover {
   color: var(--emphasis);
   transition: 0.3s;
 }
+
+/* dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  margin-top: 15px;
+  margin-left: -20px;
+  z-index: 5;
+}
+
+.dropdown-content a {
+  background-color: var(--dark);
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content a:hover {background-color: var(--off-dark);}
 
 /* HAMBURGER */
 .toggle {

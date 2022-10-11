@@ -44,7 +44,13 @@
         <ul>
           <li><a href="./">Home</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="./mission.html">Mission</a></li>
+          <li class="dropdown"><a href="./mission.html">Mission</a>
+            <div class="dropdown-content">
+              <a href="#">China</a>
+              <a href="#">S. Korea</a>
+              <a href="#">Philippines</a>
+            </div>
+          </li>
           <li><a href="./contact.html">Contact</a></li>
           <span class="outline">
             <a target="_blank" href="https://www.paypal.com/paypalme/dunamisharvest">
@@ -100,7 +106,7 @@
         <!--  small-spacing-top -->
         <h3 class="pad-heading">Who We Are</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <a class="btn btn-dark" href="#">Learn More</a>
+        <a class="btn btn-dark" href="about.html">Learn More</a>
       </div>
     </div>
   </div>
@@ -111,17 +117,17 @@
     <div class="grid-col">
       <div class="grid-unit pic-bg shadow-box pic-china" alt="Picture of China from unsplash">
         <div class="center-text bottom-text">
-          <a class=" btn btn-white shadow-text" href="#">China</a>
+          <a class=" btn btn-white" href="#">China</a>
         </div>
       </div>
       <div class="grid-unit pic-bg shadow-box pic-s-korea" alt="Picture of South Korea from unsplash">
         <div class="center-text bottom-text">
-          <a class=" btn btn-white shadow-text" href="#">S. Korea</a>
+          <a class=" btn btn-white" href="#">S. Korea</a>
         </div>
       </div>
       <div class="grid-unit pic-bg shadow-box pic-philippines" alt="Picture of Philippines from unsplash">
         <div class="center-text bottom-text">
-          <a class=" btn btn-white shadow-text" href="#">Philippines</a>
+          <a class=" btn btn-white" href="#">Philippines</a>
         </div>
       </div>
     </div>
@@ -133,16 +139,16 @@
       <div class="half-width">
         <h3 class="white-text">Let's Connect</h3>
         <form action="/contact.php">
-        <div class="contact-form small-spacing">
-          <label class="white-text" for="fname">Name </label>
-          <input class="white-contact" type="text" id="name" name="name" placeholder="John Doe" required>
-          <label class="white-text" for="fname">Email</label>
-          <input class="white-contact" type="text" id="phone-number" name="phone" placeholder="johndoe@gmail.com" required>
-          <label class="white-text" for="subject">Message</label>
-          <textarea class="white-contact" id="subject" name="subject" placeholder="Agape!" style="height:200px" required></textarea>
-        </div>
-        <a class="btn btn-clr" type="submit" value="Submit">Submit</a>
-      </form>
+          <div class="contact-form small-spacing">
+            <label class="white-text" for="fname">Name </label>
+            <input class="white-contact" type="text" id="name" name="name" placeholder="John Doe" required>
+            <label class="white-text" for="fname">Email</label>
+            <input class="white-contact" type="text" id="phone-number" name="phone" placeholder="johndoe@gmail.com" required>
+            <label class="white-text" for="subject">Message</label>
+            <textarea class="white-contact" id="subject" name="subject" placeholder="Agape!" style="height:200px" required></textarea>
+          </div>
+          <button class="btn btn-clr" type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </div>
