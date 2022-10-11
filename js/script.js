@@ -1,4 +1,4 @@
-
+// MENU
 let boolMenu = false;
 let mobile = document.getElementsByClassName("mobile-menu");
 

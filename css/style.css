@@ -142,6 +142,11 @@ footer a:hover {
   color: var(--bg);
 }
 
+.breadcrumb:hover {
+  color: var(--emphasis);
+  transition: 0.3s;
+}
+
 /* SPACE */
 .padding {
   padding: var(--padding);
