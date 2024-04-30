@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
+  <title>China | Dunamis Harvest Global Ministry</title>
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- ICONS -->
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="nav-bar" class="dark-bg padding nav-shadow">
+    <div class="logo">
+      <a href="../">
+        <img class="logo-img" src="../img/icon.png" alt="Dunamis Harvest icon">
+      </a>
+    </div>
+    <div class="toggle">
+      <div class="hamburger" id="hamburger-1" onclick="toggleMenu()">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <div id="backdrop" onclick="toggleMenu()"></div>
+      <div class="menu">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="dropdown"><a href="../mission.html">Mission</a>
+            <div class="dropdown-content">
+              <a href="philippines.html">Philippines</a>
+              <a href="nepal.html">Nepal</a>
+              <a href="malaysia.html">Malaysia</a>
+            </div>
+          </li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="outline">
+            <a target="_blank" href="https://www.paypal.com/paypalme/dunamisharvest">
+              <li>Donate</li>
+            </a>
+          </span>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="header-pg color-bg">
+    <p class="width small-spacing">
+      <a class="breadcrumb" href="../mission.html">Mission</a> › Nepal
+    </p>
+    <h1 class="center-text">Nepal</h1>
+    <!-- <hr class="mod-hr"> -->
+  </div>
+  <!-- <div class="color-bg ">
+    <div class="width">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div> -->
+
+  <!-- MISSION -->
+  <div class="width spacing">
+    <h3 class="small-spacing-bottom">Mission Trip: October 2022</h3>
+    <p>
+      Nepal is the birthplace of Buddha. Not surprisingly, Buddhism and Hinduism are the main religions of the country
+      while Christians make up only 3-5% of the population. Christian evangelism is not legally permitted in Nepal.
+      However, missionaries still risk persecution to spread the Christian faith. As a result, Christianity is growing
+      fast in the country.
+    </p>
+    <p class="text-space-top">
+      Life in Nepal is hard. There are human rights issues, which include unlawful killing, torture, and arbitrary
+      detention. Furthermore, the Nepali suffer from poverty, lack of opportunities, political instability, and natural
+      disasters. Our missionaries from Dunamis led revival services sponsored by ten local congregations. Many accepted
+      Jesus Christ as their savior even though this choice can result in religious persecution.
+    </p>
+    <!-- <div class="grid-col">
+      <div class="grid-unit pic-bg shadow-box pic-china" alt="Picture of China from unsplash">
+        <div class="center-text bottom-text">
+          <a class=" btn btn-white" href="#">China</a>
+        </div>
+      </div>
+      <div class="grid-unit pic-bg shadow-box pic-s-korea" alt="Picture of South Korea from unsplash">
+        <div class="center-text bottom-text">
+          <a class=" btn btn-white" href="#">S. Korea</a>
+        </div>
+      </div>
+      <div class="grid-unit pic-bg shadow-box pic-philippines" alt="Picture of Philippines from unsplash">
+        <div class="center-text bottom-text">
+          <a class=" btn btn-white" href="#">Philippines</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- CONTACT -->
+  <div class="spacing pic-bg pic-bg pic-contact" alt="Picture of wheat in harvest">
+    <div class="width">
+      <div class="half-width">
+        <h3 class="white-text">Let's Connect</h3>
+        <form action="/contact.php">
+          <div class="contact-form small-spacing">
+            <label class="white-text" for="fname">Name </label>
+            <input class="white-contact" type="text" id="name" name="name" placeholder="John Doe" required>
+            <label class="white-text" for="fname">Email</label>
+            <input class="white-contact" type="text" id="phone-number" name="phone" placeholder="johndoe@gmail.com"
+              required>
+            <label class="white-text" for="subject">Message</label>
+            <textarea class="white-contact" id="subject" name="subject" placeholder="Agape!" style="height:200px"
+              required></textarea>
+          </div>
+          <button class="btn btn-clr" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="dark-bg white-text padding">
+    <div>2022 © Dunamis Harvest Global Ministry</div>
+    <div>Website by <a class="white-text" target="_blank" href="https://graceavocado.com/">
+        graceavocado</a></div>
+  </footer>
+
+  <!-- javascript -->
+  <script src="../js/script.js" charset="utf-8"></script>
+</body>
+
+</html>

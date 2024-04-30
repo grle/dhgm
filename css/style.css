@@ -188,6 +188,10 @@ footer a:hover {
   padding-top: 15px;
 }
 
+.text-space-top {
+  padding-top: 10px;
+}
+
 .nav-spacing {
   margin-top: var(--nav);
 }
@@ -340,6 +344,14 @@ footer a:hover {
   background-image: url("../img/mission/sava-bobov-s-korea-unsplash.jpg");
 }
 
+.pic-nepal {
+  background-image: url("../img/mission/giuseppe-mondi-nepal-unsplash.png");
+}
+
+.pic-malaysia {
+  background-image: url("../img/mission/esmonde-yong-malaysia-unsplash.jpg");
+}
+
 .pic-philippines {
   background-image: url("../img/mission/gino-philippines-unsplash.jpg");
 }
@@ -406,6 +418,10 @@ footer a:hover {
 /* PICTURE COLUMN */
 .pic-col {
   display: flex;
+}
+
+.pic-col-img img {
+  width: 300px;
 }
 
 .pic-col-text {
