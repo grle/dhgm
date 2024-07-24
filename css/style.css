@@ -356,6 +356,10 @@ footer a:hover {
   background-image: url("../img/mission/gino-philippines-unsplash.jpg");
 }
 
+.pic-thailand {
+  background-image: url("../img/mission/mathew-schwartz-thailand-unsplash.jpg");
+}
+
 .pic-contact {
   background-image: url("../img/main/nadine-redlich-unsplash.png");
   /* why does this need it? */
