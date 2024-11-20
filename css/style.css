@@ -92,6 +92,12 @@ footer a:hover {
   transition: 0.3s;
 }
 
+iframe {
+  max-width: 560px;
+  height: 315px;
+  width: 100%;
+}
+
 /**************CLASS */
 /* COLOR */
 .color-bg {
